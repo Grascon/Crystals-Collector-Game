@@ -1,0 +1,87 @@
+body {
+	background-image: url(../images/Map-Background.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-size: 16px;
+}
+.container {
+	width: 750px;
+	margin: 10px auto;
+}
+.row {
+	    margin-bottom: 1%;
+}
+.Title {
+	    background-color: black;
+	    text-align: center;
+	    color: gold;
+	    padding: 1%;
+}
+h1{
+	margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Satisfy', cursive;
+}
+.Instructions {
+	background-image: url(../images/Map-Background2.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Satisfy', cursive;
+    font-size: 18px;
+    font-weight: bold;
+	padding: 1%;
+}
+.Random-Number{
+	background-image: url(../images/Map-Background2.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 18px;
+    font-weight: bold;
+	height: 73px;
+    padding: 25px;
+    margin-bottom: 5px;
+}
+.Crystals {
+	text-align: center;
+}
+
+.Game-Tracker {
+	background-image: url(../images/Map-Background2.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align: center;
+	font-family: 'Satisfy', cursive;
+    font-size: 18px;
+    font-weight: bold;
+	padding: 1%;
+	margin-bottom: 5px;
+}
+.Scoreboard {
+	background-image: url(../images/Map-Background2.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align: center;
+	text-align: center;
+	font-family: 'Satisfy', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    height: 73px;
+    padding: 20px;
+    margin-bottom: 5px;
+    
+}
+.Score {
+	text-align: center;
+}
+img {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+}
