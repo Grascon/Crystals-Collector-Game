@@ -1,13 +1,15 @@
-
+body, html {
+	height: 100%;
+}
 body {
 	background-image: url(../images/Map-Background.jpg);
 	background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 	font-size: 16px;
 }
 .container {
 	margin: 0px auto;
+	margin-bottom: 50px;
 }
 .row {
 	    margin-bottom: 1%;
@@ -24,10 +26,8 @@ h1{
     font-family: 'Satisfy', cursive;
 }
 .Instructions {
-	background-image: url(../images/Map-Background2.jpg);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	margin-top: 10px;
+	background-color: white;
     font-family: 'Satisfy', cursive;
     font-size: 18px;
     font-weight: bold;
@@ -82,8 +82,18 @@ h1{
 	text-align: center;
 }
 img {
-	width: 150px;
-	height: 150px;
-	margin: 10px;
-	float: left;
+	width: 135px;
+    height: 150px;
+    margin: 5px;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	padding: 1%;
+	background-color: black;
+	color: gold;
+	text-align: center;
+	font-family: 'Satisfy';
 }

@@ -20,7 +20,19 @@ $(document).ready(function(){
 	$("#Score").text("Your score is: " + score);
 	$("#wins").text(wins);
 	$("#losses").text(losses);
-
+	$(".Crystals").hide();
+	$(".Random-Number").hide();
+	$(".Scoreboard").hide(); 
+	$(".Game-Tracker").hide();
+	$(".Instructions").append('<button id="initialButton">Start</button>');
+	$("#initialButton").on("click", function(){
+		$(".Instructions").hide();
+		$(".Crystals").show();
+		$(".Random-Number").show();
+		$(".Scoreboard").show(); 
+		$(".Game-Tracker").show();
+		//create restart function
+	});
 	//resets game by resetting score variable back to zero and getting a new random number and new random numbers for each crystal value
 	function reset(){
 		numberChoosen = Math.floor(Math.random()*120+19);
