@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	//selecting random number 
 	var numberChoosen = Math.floor(Math.random()*120+19);
-	$(".Random-Number").text("The number to reach is: " + numberChoosen);
+	$("#Random-Number").text("The number to reach is: " + numberChoosen);
 
 
 	//values for the crystals
@@ -20,23 +20,22 @@ $(document).ready(function(){
 	$("#Score").text("Your score is: " + score);
 	$("#wins").text(wins);
 	$("#losses").text(losses);
+	$("#tracker-panel").hide();
 	$(".Crystals").hide();
-	$(".Random-Number").hide();
-	$(".Scoreboard").hide(); 
-	$(".Game-Tracker").hide();
-	$(".Instructions").append('<button id="initialButton">Start</button>');
+	$(".Instructions").append('<button id="initialButton" class=" btn btn-primary">Start</button>');
 	$("#initialButton").on("click", function(){
-		$(".Instructions").hide();
+		$("#instructions-panel").hide();
+		$("#tracker-panel").show();
 		$(".Crystals").show();
-		$(".Random-Number").show();
-		$(".Scoreboard").show(); 
-		$(".Game-Tracker").show();
-		//create restart function
+		$(".Crystals").append('<button id="instructions-button" class=" btn btn-primary">Rules of the Game</button>');
+		$("#instructions-button").on("click", function(){
+			location.reload();
+		});
 	});
 	//resets game by resetting score variable back to zero and getting a new random number and new random numbers for each crystal value
 	function reset(){
 		numberChoosen = Math.floor(Math.random()*120+19);
-		$(".Random-Number").text("The number to reach is: " + numberChoosen);
+		$("#Random-Number").text("The number to reach is: " + numberChoosen);
 		crystalValue1 = Math.floor(Math.random()*12+1);
 		crystalValue2 = Math.floor(Math.random()*12+1);
 		crystalValue3 = Math.floor(Math.random()*12+1);
